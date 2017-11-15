@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # coding: utf-8
 
+# Heavily derived from a combination of
+#  https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/robot/buttons_and_switches/
+# and:
 #--------------------------------------
 #    ___  ___  _ ____          
 #   / _ \/ _ \(_) __/__  __ __ 

@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # coding: utf-8
 
+#
+# Gotten from: https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/robot/buttons_and_switches/
+# 
+
 # Import required libraries
 import sys
 import time
