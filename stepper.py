@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# coding: utf-8
+
 #--------------------------------------
 #    ___  ___  _ ____          
 #   / _ \/ _ \(_) __/__  __ __ 
@@ -30,7 +32,7 @@ GPIO.setmode(GPIO.BCM)
 # Define GPIO signals to use
 # Physical pins 11,15,16,18
 # GPIO17,GPIO22,GPIO23,GPIO24
-StepPins = [17,22,23,24]
+StepPins = [4,17,22,27]
 
 # Set all pins as output
 for pin in StepPins:
@@ -48,6 +50,16 @@ Seq = [[1,0,0,1],
        [0,0,1,0],
        [0,0,1,1],
        [0,0,0,1]]
+
+# above is backward of the 8 step.
+#8 Step : A – AB – B – BC – C – CD – D – DA
+# 4 Step : AB – BC – CD – DA (Usual application)
+# below is forward of the 4 step
+#Seq = [[1,1,0,0],
+       #[0,1,1,0],
+       #[0,0,1,1],
+       #[1,0,0,1]]
+
        
 StepCount = len(Seq)
 StepDir = 1 # Set to 1 or 2 for clockwise
